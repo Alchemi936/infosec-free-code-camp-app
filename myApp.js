@@ -1,7 +1,13 @@
 const express = require('express');
+const helmet = require('helmet');
 const app = express();
 
+const PORT = process.env.PORT || 3030;
 
+
+app.listen(PORT, () => {
+  console.log(`🌷 Alchemist Unicorn Info Security App started on port ${PORT}`);
+});
 
 
 
